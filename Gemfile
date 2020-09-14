@@ -160,7 +160,7 @@ end
 
 group :systemd, :optional => true do
   gem "dbus-systemd",    "~>1.1.0", :require => false
-  gem "systemd-journal", "~>1.4.0", :require => false
+  gem "systemd-journal", "~>1.4.2", :require => false
 end
 
 group :openshift, :manageiq_default do
@@ -220,7 +220,7 @@ group :seed, :manageiq_default do
 end
 
 group :smartstate, :manageiq_default do
-  gem "manageiq-smartstate", "~>0.5.3", :require => false
+  gem "manageiq-smartstate",            "~>0.6.0",       :require => false
 end
 
 group :consumption, :manageiq_default do
@@ -265,7 +265,7 @@ unless ENV["APPLIANCE"]
   end
 
   group :test do
-    gem "brakeman",          "~>3.3",    :require => false
+    gem "brakeman",          "~>4.8",    :require => false
     gem "capybara",          "~>2.5.0",  :require => false
     gem "coveralls",         "~>0.8.23", :require => false
     gem "db-query-matchers", "~>0.10.0"
